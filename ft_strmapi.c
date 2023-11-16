@@ -1,43 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 16:18:20 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/16 09:57:03 by mbaiz            ###   ########.fr       */
+/*   Created: 2023/11/16 11:39:12 by mbaiz             #+#    #+#             */
+/*   Updated: 2023/11/16 13:28:59 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char	*ptr;
-	size_t	i;
+	unsigned int	i;
+	char			*res;
 
-	ptr = b;
+	res = malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (!res)
+		return (NULL);
 	i = 0;
-	while (i < len)
+	while (i < ft_strlen(s))
 	{
-		ptr[i] = (unsigned char)c;
+		res[i] = (*f)(i, s[i]);
 		i++;
 	}
-	return (b);
+	res[i] = 0;
+	return (res);
 }
-/*int main ()
-{
-	
-
-	int a = 0;
-	 ft_memset(&a, 57, 1);
-	 ft_memset(&a + 1, 5, 1);
-	 printf("%d",a);
-	//  while (i<5)
-	//  {
-	// 	 printf("%c ",t[i]);
-	// 	 i++;
-	//  }
-	 
-}*/

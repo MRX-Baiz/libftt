@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 14:33:52 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/07 14:33:53 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/16 09:58:39 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s1)
 	n = 0;
 	k = ft_strlen(s1);
 	tmp = (char *)malloc(k + 1);
-	if(!tmp)
+	if (!tmp)
 		return (NULL);
 	while (n < k)
 	{

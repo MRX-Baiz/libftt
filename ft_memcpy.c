@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 11:26:33 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/13 17:02:04 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/14 18:32:55 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	src1 = (char *)src;
 	dst1 = (char *)dst;
 	i = 0;
+	if (src1 == 0 && dst1 == 0)
+		return (NULL);
+	if (dst1 == src1)
+		return (src1);
 	while (i < n)
 	{
 		dst1[i] = src1[i];
@@ -38,13 +42,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 //     // printf("%s\n", res);
 //     printf ("%s", res1);
 // }use the scd main
-/*int main()
-{
-	char src[] = "hossam";
-	char dst[4] = {0};
+// int main()
+// {
+// //	char src[] = "hossam";
+// //	char dst[4] = {0};
 
-	ft_memcpy(dst, src, 3);
+// 	printf("%s\n",ft_memcpy("nouha", "nouha", 4));
 
-	printf("%s\n",dst);
+// //	printf("%s\n",dst);
 
-}*/
+// }
