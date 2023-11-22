@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 12:29:41 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/08 12:29:42 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/22 10:31:44 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,12 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		return (NULL);
 	while (s1[i])
 	{
-		tmp[j] = s1[i];
-		i++;
-		j++;
+		tmp[j++] = s1[i++];
 	}
 	i = 0;
 	while (s2[i])
 	{
-		tmp[j] = s2[i];
-		i++;
-		j++;
+		tmp[j++] = s2[i++];
 	}
 	tmp[j] = 0;
 	return (tmp);

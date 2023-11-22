@@ -1,31 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 13:55:22 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 09:54:14 by mbaiz            ###   ########.fr       */
+/*   Created: 2023/11/16 18:22:13 by mbaiz             #+#    #+#             */
+/*   Updated: 2023/11/22 09:50:12 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_putstr_fd(char *str, int fd)
 {
-	unsigned char	*ptr1;
-	unsigned char	*ptr2;
-	size_t			i;
+	int	i;
 
 	i = 0;
-	ptr1 = (unsigned char *)s1;
-	ptr2 = (unsigned char *)s2;
-	while ((ptr1[i] || ptr2[i]) && i < n)
+	while (str[i])
 	{
-		if (ptr1[i] != ptr2[i])
-			return (ptr1[i] - ptr2[i]);
+		write(fd, &str[i], 1);
 		i++;
 	}
-	return (0);
 }
+// #include <fcntl.h>
+// int main()
+// {
+// int fd = open("test.txt", O_CREAT |O_WRONLY|O_RDONLY,0777);
+// printf("%d\n", fd);
+// printf("%d\n", fd2);
+// printf("%d\n", fd3);
+// if (!fd)
+// {
+// 	printf("makhdemsh");
+// }
+// else
+// {
+// 	write(fd,"1234567890",10);
+// printf(" %d",fd);
+// printf("%d",fd);
+// close(fd);
+// }
+// }
