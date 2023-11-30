@@ -1,7 +1,7 @@
 
 NAME = libft.a
 FLAGS = -Wall -Werror -Wextra
-CC = gcc
+CC = cc
 INC = libft.h
 SRC = ft_isalpha.c \
 	  ft_isprint.c \
@@ -48,17 +48,20 @@ B_SRC = ft_lstnew_bonus.c \
 	  ft_lstiter_bonus.c \
 
 OBJ = $(SRC:%.c=%.o)
+
 B_OBJ = $(B_SRC:%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
+
 	ar rcs $(NAME) $(OBJ)
-bonus: $(B_OBJ)
-	ar rcs $(NAME) $(B_OBJ)
 
 %.o: %.c $(INC)
 	$(CC) $(FLAGS) -c $< -o $@
+
+bonus: $(B_OBJ)
+	ar rcs $(NAME) $(B_OBJ)
 
 clean:
 	rm -f $(OBJ) $(B_OBJ)
@@ -69,4 +72,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: fclean clean all bonus re
-

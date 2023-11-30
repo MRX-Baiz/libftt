@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbaiz <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:41:32 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/14 15:41:43 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/25 10:25:30 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,13 +99,3 @@ char	**ft_split(char const *s, char c)
 	rslt[j] = NULL;
 	return (rslt);
 }
-// int main()
-// {
-// 	char **str;
-// 	str = ft_split("-------split--------this-for----me--!--------", '-');
-// 	int i =0;
-// 	while (*str[i]){
-// 	printf("%s",*str[i]);
-// 	i++;
-// 	}
-// }

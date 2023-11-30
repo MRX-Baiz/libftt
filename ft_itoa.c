@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:52:51 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/16 09:51:30 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 14:42:52 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,12 +60,3 @@ char	*ft_itoa(int nb)
 	}
 	return (str);
 }
-/*int	main(void)
-{
-	int		n;
-	char	*str;
-
-	n = 97;
-	str = ft_itoa(n);
-	printf("%s", str);
-}*/

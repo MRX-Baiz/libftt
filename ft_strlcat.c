@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 21:31:34 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 10:49:03 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 16:16:52 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[d] = 0;
 	return (di + si);
 }
-// {
-// char src[7]="hossam";
-
-// char dst[]= "baiz";
-// char s[]="pqrstuvwxyz";
-
-// 	size_t k = strlcat("baiz",NULL , 0);
-
-// 	 printf("%s\n",s);
-// 	printf("%lu",k);
-
-// }

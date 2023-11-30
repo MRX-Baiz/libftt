@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 21:43:36 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/16 14:12:31 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/29 17:24:48 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (j);
 }
-/*int main()
-{
-	char src[10]="hossamm";
-	char dst[5];
-	size_t k=ft_strlcpy(dst,src,4);
-	printf("%s",dst);
-	printf("%d",(int)k);
-}*/

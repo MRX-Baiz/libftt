@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:22:13 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 09:50:12 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 10:58:06 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *str, int fd)
 	int	i;
 
 	i = 0;
+	if (!str)
+		return ;
 	while (str[i])
 	{
 		write(fd, &str[i], 1);

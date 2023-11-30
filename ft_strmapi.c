@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:39:12 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 14:13:22 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 16:15:29 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*res;
 
+	if (!s)
+		return (NULL);
 	res = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
@@ -29,14 +31,3 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
-// char f(unsigned int index, char c)
-// {
-// 	return (c + 1);
-// }
-// int main()
-// {
-// 	char *s = "hosasm";
-// 	char *k;
-// 	k = ft_strmapi(s, f);
-// printf("%s",k);
-// }

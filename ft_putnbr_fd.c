@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 11:55:39 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/17 14:20:08 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 14:50:07 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n1 / 10, fd);
 	ft_putchar_fd(n1 % 10 + '0', fd);
 }
-// int	main()
-// {
-// 	ft_putnbr_fd(2147483647,1);
-// }

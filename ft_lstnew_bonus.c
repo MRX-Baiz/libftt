@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 17:18:14 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/19 17:18:21 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/25 12:21:20 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,8 @@ t_list	*ft_lstnew(void *content)
 
 	e1 = malloc(sizeof(t_list));
 	if (!e1)
-		return (NULL);
+		return (0);
 	e1->content = content;
-	e1->next = NULL;
+	e1->next = 0;
 	return (e1);
 }
-
-// int	main()
-// {
-// 	char *k;
-// 	k = "5";
-// 	 t_list *e2;
-// 	e2 = ft_lstnew(k);
-// 	printf("%s",(char *)(e2->content));
-// }

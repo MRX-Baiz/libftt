@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 19:02:17 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/16 19:06:04 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 11:02:03 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *str, int fd)
 	int	i;
 
 	i = 0;
+	if (!str)
+		return ;
 	while (str[i])
 	{
 		write(fd, &str[i], 1);

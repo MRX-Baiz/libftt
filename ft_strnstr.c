@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 17:01:35 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 09:54:54 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 16:10:47 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
+	if (haystack == 0 && len == 0)
+		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	while (haystack[i])

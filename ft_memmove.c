@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mbaiz <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 16:37:31 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/05 11:23:39 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/29 17:05:58 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(dst1, src1, len);
 	return (dst);
 }
-/*int main()
-{
-	int str[5]={5,5,5,5,5};
-	char destination[20];
-
-	ignedrintf("%d",str[0]);
-	ft_memmove(destination ,str, 12);
-	printf("%d",destination[4]);
-}*/

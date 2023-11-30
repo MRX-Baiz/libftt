@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:18:20 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/20 13:26:33 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 16:26:19 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-// int main ()
-// {
-// 	int a = 0;
-// 	 ft_memset(&a, 255, 4);
-// 	 ft_memset(&a, 250, 2);
-// 	 ft_memset(&a, 199, 1);
-// 	 printf("%d",a);
-// 	//  while (i<5)
-// 	//  {
-// 	// 	 printf("%c ",t[i]);
-// 	// 	 i++;
-// 	//  }	 
-// }

@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 13:23:43 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/22 10:05:17 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/11/30 11:29:17 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	start;
 	char	*tmp;
 
+	if (!s1)
+		return (NULL);
 	end = ft_strlen(s1);
 	tmp = 0;
 	start = 0;
@@ -37,7 +39,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy(tmp, s1 + start, end - start + 1);
 	return (tmp);
 }
-/* si s1 point sur null*/
-/* we skip the the set frm the start and the end of string s1 */
-/* we recheck if the s1 pointe on null */
-/* we cpy to the tmp*/
