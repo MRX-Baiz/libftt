@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:22:13 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/30 10:58:06 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/12/05 13:57:27 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *str, int fd)
 	int	i;
 
 	i = 0;
+	if (fd < 0)
+		return ;
 	if (!str)
 		return ;
 	while (str[i])
@@ -25,22 +27,3 @@ void	ft_putstr_fd(char *str, int fd)
 		i++;
 	}
 }
-// #include <fcntl.h>
-// int main()
-// {
-// int fd = open("test.txt", O_CREAT |O_WRONLY|O_RDONLY,0777);
-// printf("%d\n", fd);
-// printf("%d\n", fd2);
-// printf("%d\n", fd3);
-// if (!fd)
-// {
-// 	printf("makhdemsh");
-// }
-// else
-// {
-// 	write(fd,"1234567890",10);
-// printf(" %d",fd);
-// printf("%d",fd);
-// close(fd);
-// }
-// }

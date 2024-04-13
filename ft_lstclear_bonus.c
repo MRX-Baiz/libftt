@@ -6,7 +6,7 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 13:51:45 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/30 16:28:22 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/12/04 18:13:15 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*node;
 
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	while (*lst)
 	{

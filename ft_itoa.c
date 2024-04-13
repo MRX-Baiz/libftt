@@ -6,13 +6,13 @@
 /*   By: mbaiz <mbaiz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 11:52:51 by mbaiz             #+#    #+#             */
-/*   Updated: 2023/11/30 14:42:52 by mbaiz            ###   ########.fr       */
+/*   Updated: 2023/12/03 13:54:22 by mbaiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	nbr_lenght(long n)
+static int	nbr_lenght(long n)
 {
 	int	len;
 
